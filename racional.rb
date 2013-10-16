@@ -11,20 +11,20 @@ class Fraccion
         def to_s
 		"#{@num}/#{@den}"
         end
-        def suma(f)
-		numerador=num*f.den+den*f.num
-		denominador=den*f.den
+        def suma(n,d)
+		@num=@num*d+@den*n
+		@den=den*d
         end
-        def resta
-		numerador=num*f.den-den*f.num
-		denominador=den*f.den
+        def resta(n,d)
+		@num=@num*d-@den*n
+		@den=@den*d
         end
-        def producto(f)
-		
+        def producto(n,d)
+		@num=@num*n
+		@den=@den*d
         end
-        def division
+        def division(n,d)
+		@num=@num*d
+		@den=@den*n
         end
 end
-f1=Fraccion.new(1,3)
-puts f1
-
