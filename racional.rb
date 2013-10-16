@@ -14,17 +14,22 @@ class Fraccion
         def suma(n,d)
 		@num=@num*d+@den*n
 		@den=den*d
+		return @num,@den
         end
         def resta(n,d)
 		@num=@num*d-@den*n
 		@den=@den*d
+		return @num,@den
         end
         def producto(n,d)
 		@num=@num*n
 		@den=@den*d
+		return @num,@den
         end
         def division(n,d)
 		@num=@num*d
 		@den=@den*n
+		return @dnum,@den
         end
 end
+
