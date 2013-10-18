@@ -12,24 +12,27 @@ class Fraccion
 		"#{@num}/#{@den}"
         end
         def suma(n,d)
-		@num=@num*d+@den*n
-		@den=den*d
-		return @num,@den
+		numerador=@num*d+@den*n
+		denominador=den*d
+		f3=Fraccion.new(numerador,denominador)
+		return f3.to_s
         end
         def resta(n,d)
-		@num=@num*d-@den*n
-		@den=@den*d
-		return @num,@den
+		numerador=@num*d-@den*n
+		denominador=@den*d
+		f3=Fraccion.new(numerador,denominador)
+		return f3.to_s
         end
         def producto(n,d)
-		@num=@num*n
-		@den=@den*d
-		return @num,@den
+		numerador=@num*n
+		denominador=@den*d
+		f3=Fraccion.new(numerador,denominador)
+		return f3.to_s
         end
         def division(n,d)
-		@num=@num*d
-		@den=@den*n
-		return @dnum,@den
+		numerador=@num*d
+		denominador=@den*n
+		f3=Fraccion.new(numerador,denominador)
+		return f3.to_s
         end
 end
-
